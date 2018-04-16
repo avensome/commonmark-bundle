@@ -1,0 +1,22 @@
+{
+    "name": "avensome/commonmark-bundle",
+    "description": "Integrates CommonMark into Symfony apps.",
+    "type": "symfony-bundle",
+    "require": {
+        "league/commonmark": "^0.17.5",
+        "php": "^7.0",
+        "symfony/framework-bundle": "^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Krzysztof Śmiałek",
+            "email": "composer@avensome.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Avensome\\CommonMarkBundle\\": ""
+        }
+    }
+}
