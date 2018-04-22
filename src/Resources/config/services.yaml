@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Avensome\CommonMarkBundle\:
+        resource: '../../*'
+
+    League\CommonMark\Environment:
+        factory: 'Avensome\CommonMarkBundle\EnvironmentFactory:create'

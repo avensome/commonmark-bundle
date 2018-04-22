@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Avensome\\CommonMarkBundle\\": ""
+            "Avensome\\CommonMarkBundle\\": "src/"
         }
     }
 }
