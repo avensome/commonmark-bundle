@@ -15,7 +15,7 @@ class EnvironmentFactory
         $this->extensions[] = $extension;
     }
 
-    public function create(): Environment
+    public function createEnvironment(): Environment
     {
         $environment = Environment::createCommonMarkEnvironment();
         foreach ($this->extensions as $extension) {

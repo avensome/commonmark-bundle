@@ -18,5 +18,11 @@ class AvensomeCommonMarkExtension extends Extension
     {
         $loader = new YamlFileLoader($containerBuilder, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
+
+        $configuration = new Configuration();
+        $config = $this->processConfiguration($configuration, $configs);
+
+        $converterFactoryDefinition = $containerBuilder->findDefinition('Avensome\CommonMarkBundle\ConverterFactory');
+        $converterFactoryDefinition->addMethodCall('setConfig', [$config['converter_config']]);
     }
 }

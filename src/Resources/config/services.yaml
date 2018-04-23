@@ -8,4 +8,7 @@ services:
         resource: '../../*'
 
     League\CommonMark\Environment:
-        factory: 'Avensome\CommonMarkBundle\EnvironmentFactory:create'
+        factory: 'Avensome\CommonMarkBundle\EnvironmentFactory:createEnvironment'
+
+    League\CommonMark\CommonMarkConverter:
+        factory: 'Avensome\CommonMarkBundle\ConverterFactory:createConverter'
