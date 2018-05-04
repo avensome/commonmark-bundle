@@ -12,3 +12,12 @@ services:
 
     League\CommonMark\CommonMarkConverter:
         factory: 'Avensome\CommonMarkBundle\ConverterFactory:createConverter'
+
+    Aptoma\Twig\Extension\MarkdownEngine\PHPLeagueCommonMarkEngine:
+        arguments:
+            - '@League\CommonMark\CommonMarkConverter'
+
+    Aptoma\Twig\Extension\MarkdownExtension:
+        arguments:
+            - '@Aptoma\Twig\Extension\MarkdownEngine\PHPLeagueCommonMarkEngine'
+        tags: ['twig.extension']

@@ -1,11 +1,12 @@
 {
     "name": "avensome/commonmark-bundle",
-    "description": "Integrates CommonMark into Symfony apps.",
+    "description": "Integrates CommonMark into Symfony 4 apps.",
     "type": "symfony-bundle",
     "require": {
         "league/commonmark": "^0.17.5",
         "php": "^7.0",
-        "symfony/framework-bundle": "^4.0"
+        "symfony/framework-bundle": "^4.0",
+        "aptoma/twig-markdown": "^3.0"
     },
     "license": "MIT",
     "authors": [
