@@ -10,7 +10,7 @@ Requires PHP 7.0+ and Symfony 4.0+.
 Install with Composer:
 
 ```
-composer install avensome/commonmark-bundle
+composer require avensome/commonmark-bundle
 ```
 
 Then add `Avensome\CommonMarkBundle\AvensomeCommonMarkBundle` to `config/bundles.php`:
